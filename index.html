@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101b2d">
+<title>عالم تنة ورنة ✨ لرحمة</title>
+<style>
+:root{--night:#101b2d;--gold:#f8d98a;--mint:#a9f5c9;--pink:#ffb8d2;--glass:rgba(255,255,255,.09)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:#fff;font-family:system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;background:radial-gradient(ellipse at 50% 0%,#294d5b 0,#17283c 45%,#0b1222 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 15% 20%,#fff 45%,transparent 60%),radial-gradient(1px 1px at 75% 13%,#ffe8a8 45%,transparent 60%),radial-gradient(2px 2px at 85% 62%,#fff 45%,transparent 60%),radial-gradient(1px 1px at 22% 75%,#fff 45%,transparent 60%),radial-gradient(1px 1px at 48% 42%,#fff 45%,transparent 60%);opacity:.75}
+.wrap{width:min(760px,100%);margin:auto;padding:24px 16px 36px;position:relative}
+header{text-align:center;padding:12px 0 8px}
+.eyebrow{color:var(--gold);letter-spacing:2px;font-size:.82rem}
+h1{font-size:clamp(1.8rem,6vw,3rem);margin:8px 0 5px}
+.sub{color:#d8e5ef;margin:0}
+.fairy-stage{height:210px;display:grid;place-items:center;position:relative}
+.moon{position:absolute;width:142px;height:142px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff8d9,#f6d782 55%,#b7a0ef 100%);box-shadow:0 0 30px #f5db9c66,0 0 90px #8fffd533}
+.fairy{position:relative;font-size:105px;filter:drop-shadow(0 0 10px #a8ffce66);animation:float 3s ease-in-out infinite;z-index:1;transition:filter .3s}
+.fairy.talking{filter:drop-shadow(0 0 18px #b7ffd7) drop-shadow(0 0 35px #f8d98a);animation:float .7s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(2px) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}
+.sparkle{position:absolute;color:var(--gold);font-size:24px;animation:twinkle 2s infinite}
+.s1{top:28px;left:23%}.s2{right:20%;top:56px;animation-delay:.6s}.s3{bottom:24px;right:29%;animation-delay:1s}
+@keyframes twinkle{0%,100%{opacity:.35;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}
+.card{background:var(--glass);border:1px solid #ffffff24;border-radius:24px;padding:18px;box-shadow:0 18px 50px #0003;backdrop-filter:blur(12px)}
+.welcome{text-align:center;margin-bottom:14px}
+button{font:inherit;cursor:pointer;border:0;border-radius:14px;padding:12px 17px;font-weight:700;transition:transform .15s,opacity .15s}
+button:active{transform:scale(.98)}
+.primary{background:linear-gradient(135deg,#f8d98a,#a9f5c9);color:#142334}
+button:disabled{opacity:.5;cursor:not-allowed}
+#chat{display:flex;flex-direction:column;gap:12px;min-height:170px;max-height:360px;overflow:auto;padding:4px 2px 14px}
+.msg{max-width:88%;padding:11px 14px;border-radius:18px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}
+.msg.fairy-msg{align-self:flex-start;background:#d8f6e51c;border:1px solid #a9f5c944;border-top-right-radius:5px}
+.msg.user-msg{align-self:flex-end;background:#f8d98a1c;border:1px solid #f8d98a44;border-top-left-radius:5px}
+.label{font-size:.75rem;color:var(--gold);display:block;margin-bottom:3px}
+.composer{display:flex;gap:8px;margin-top:8px}
+input{flex:1;min-width:0;background:#07111f88;color:white;border:1px solid #ffffff2c;border-radius:14px;padding:13px;font:inherit;outline:none}
+input:focus{border-color:var(--mint)}
+input::placeholder{color:#aab8c9}
+.tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.secondary{background:#ffffff12;color:#eef6ff;border:1px solid #ffffff24}
+.status{font-size:.85rem;color:#cbd8e6;min-height:24px;margin:9px 2px 0}
+footer{text-align:center;color:#aebed0;font-size:.8rem;margin-top:16px}
+#gate{position:fixed;inset:0;z-index:10;display:grid;place-items:center;padding:20px;background:radial-gradient(ellipse at 50% 30%,#284f5a,#111c31 70%);transition:opacity .4s}
+.gate-box{max-width:440px;text-align:center;background:#ffffff0e;border:1px solid #ffffff28;border-radius:28px;padding:28px 22px;box-shadow:0 20px 80px #0005}
+.gate-box .big{font-size:76px}
+.gate-box h2{margin:8px 0;color:var(--gold)}
+.gate-box p{line-height:1.8;color:#e1eaf3}
+.hidden{display:none!important}
+.small{font-size:.78rem;color:#b8c6d5;line-height:1.6}
+</style>
+</head>
+<body>
+<div id="gate">
+  <div class="gate-box">
+    <div class="big">🧚🏻‍♀️✨</div>
+    <div class="eyebrow">رسالة صغيرة من عالم الخيال</div>
+    <h2>رحمة، هاي إلك 💚</h2>
+    <p>أكو جنّية صغيرة تنتظرج حتى تسولف وياج… مستعدة تفتحين باب عالمها؟</p>
+    <button class="primary" id="enterBtn">افتحي الباب السحري ✨</button>
+    <p class="small">اضغطي حتى يشتغل الصوت إذا كان مدعوم بمتصفحج.</p>
+  </div>
+</div>
+<main class="wrap">
+  <header>
+    <div class="eyebrow">A LITTLE MAGIC, JUST FOR YOU</div>
+    <h1>عالم تنة ورنة ✨</h1>
+    <p class="sub">مكان صغير مليان سحر وسوالف حلوة لرحمة</p>
+  </header>
+  <section class="fairy-stage" aria-label="شخصية خيالية">
+    <div class="moon"></div><span class="sparkle s1">✦</span><span class="sparkle s2">✧</span><span class="sparkle s3">✦</span>
+    <div class="fairy" id="fairy" aria-hidden="true">🧚🏻‍♀️</div>
+  </section>
+  <section class="card welcome">
+    <strong>هلا بروحي رحمة! 💚</strong>
+    <p style="margin:8px 0 14px;color:#dbe7f0;line-height:1.8">آني تنة ورنة، جنت أنتظرج! احچيلي شنو بخاطرج، آني هنا حتى نسولف ونضحك سوه.</p>
+  </section>
+  <section class="card">
+    <div id="chat" aria-live="polite">
+      <div class="msg fairy-msg"><span class="label">تنة ورنة 🧚🏻‍♀️</span>هلووو رحمة! ✨ نورتِ عالمي. شلونج اليوم يا أحلى وردة؟ 💚</div>
+    </div>
+    <form id="form" class="composer">
+      <input id="message" maxlength="1000" autocomplete="off" placeholder="اكتبي سوالفج هنا يا رحمة..." aria-label="رسالتج">
+      <button id="send" class="primary" type="submit">إرسال ✨</button>
+    </form>
+    <div class="tools">
+      <button class="secondary" id="voiceBtn" type="button">🔊 تشغيل/إيقاف الصوت</button>
+      <button class="secondary" id="clearBtn" type="button">مسح السوالف</button>
+    </div>
+    <div class="status" id="status" role="status"></div>
+    <p class="small">ملاحظة: الصوت يعتمد على الأصوات المتوفرة بجهازج ومتصفحج، وممكن يختلف من جهاز للثاني.</p>
+  </section>
+  <footer>مصنوع بمحبة حتى يرسم ابتسامة على وجه رحمة 🌙💫</footer>
+</main>
+<script>
+const chat = document.getElementById('chat');
+const form = document.getElementById('form');
+const input = document.getElementById('message');
+const send = document.getElementById('send');
+const statusEl = document.getElementById('status');
+const fairy = document.getElementById('fairy');
+let voiceEnabled = true;
+let history = [];
+let currentUtterance = null;
+
+function addMessage(who, text) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + (who === 'fairy' ? 'fairy-msg' : 'user-msg');
+  const label = document.createElement('span');
+  label.className = 'label';
+  label.textContent = who === 'fairy' ? 'تنة ورنة 🧚🏻‍♀️' : 'رحمة 💌';
+  const body = document.createElement('span');
+  body.textContent = text;
+  div.append(label, body);
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+function stopVoice() {
+  if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+  fairy.classList.remove('talking');
+  currentUtterance = null;
+}
+function speak(text) {
+  if (!voiceEnabled || !('speechSynthesis' in window)) return;
+  stopVoice();
+  const utterance = new SpeechSynthesisUtterance(text);
+  utterance.lang = 'ar-IQ';
+  utterance.rate = 0.94;
+  utterance.pitch = 1.45;
+  utterance.onstart = () => fairy.classList.add('talking');
+  utterance.onend = () => fairy.classList.remove('talking');
+  utterance.onerror = () => fairy.classList.remove('talking');
+  currentUtterance = utterance;
+  window.speechSynthesis.speak(utterance);
+}
+document.getElementById('enterBtn').addEventListener('click', () => {
+  document.getElementById('gate').classList.add('hidden');
+  speak('هلووو رحمة! نورتِ عالمي. شلونج اليوم يا أحلى وردة؟');
+  input.focus();
+});
+document.getElementById('voiceBtn').addEventListener('click', () => {
+  voiceEnabled = !voiceEnabled;
+  if (!voiceEnabled) stopVoice();
+  statusEl.textContent = voiceEnabled ? 'الصوت اشتغل 🔊' : 'الصوت متوقف.';
+});
+document.getElementById('clearBtn').addEventListener('click', () => {
+  stopVoice(); history = [];
+  chat.replaceChildren();
+  addMessage('fairy', 'رجعنا من البداية يا رحمة! ✨ شنو تحبين نسولف هالمرة؟');
+});
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const message = input.value.trim();
+  if (!message || send.disabled) return;
+  addMessage('user', message);
+  history.push({ role: 'user', content: message });
+  input.value = ''; send.disabled = true; statusEl.textContent = 'تنة ورنة دا تفكر بجواب حلو… ✨';
+  try {
+    const response = await fetch('/.netlify/functions/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ messages: history.slice(-12) })
+    });
+    const data = await response.json().catch(() => ({}));
+    if (!response.ok) throw new Error(data.error || 'ما كدرت أتصل بالمساعد هسه.');
+    const reply = (data.reply || '').trim() || 'يا روحي، ما لحكت أرتب جوابي. جربي مرة ثانية؟ 💚';
+    history.push({ role: 'assistant', content: reply });
+    addMessage('fairy', reply); speak(reply);
+    statusEl.textContent = '';
+  } catch (err) {
+    statusEl.textContent = 'صار خلل بالاتصال. تأكدي من إعدادات الموقع وجربي مرة ثانية.';
+    addMessage('fairy', 'أوف، صار عندي تشويش بالسحر هالمرة 😅 جربي بعد شويّة، وإذا استمرت المشكلة يمكن إعدادات الربط تحتاج مراجعة.');
+    console.error(err);
+  } finally {
+    send.disabled = false; input.focus();
+  }
+});
+</script>
+</body>
+</html>
